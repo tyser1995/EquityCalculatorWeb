@@ -9,35 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EquityCalculatorWeb
 build_property.RootNamespace = EquityCalculatorWeb
-build_property.ProjectDir = C:\Users\mAnoL\Documents\dev\JOBS\Profriends\EquityCalculatorWeb\
+build_property.ProjectDir = C:\Users\mAnoL\Documents\dev\JOBS\Profriends\repo\EquityCalculatorWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mAnoL\Documents\dev\JOBS\Profriends\EquityCalculatorWeb
+build_property.MSBuildProjectDirectory = C:\Users\mAnoL\Documents\dev\JOBS\Profriends\repo\EquityCalculatorWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/Home/Index.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/Shared/Error.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/Home/_Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/_ViewImports.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/_ViewStart.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/EquityCalculatorWeb/Views/Shared/_Layout.cshtml]
+[C:/Users/mAnoL/Documents/dev/JOBS/Profriends/repo/EquityCalculatorWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j6x5jp74im

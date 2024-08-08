@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj": {}
+    "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj": {
+    "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
+        "projectUniqueName": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
         "projectName": "EquityCalculatorWeb",
-        "projectPath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
+        "projectPath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
         "packagesPath": "C:\\Users\\mAnoL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\obj\\",
+        "outputPath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

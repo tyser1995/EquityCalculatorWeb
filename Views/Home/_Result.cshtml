@@ -1,0 +1,30 @@
+﻿@model EquityCalculatorWeb.Models.EquityCalculation
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Selling Price: @Model.SellingPrice</h5>
+        <p class="card-text">Reservation Date: @Model.ReservationDate.ToString("yyyy-MM-dd")</p>
+        <p class="card-text">Equity Term: @Model.EquityTerm months</p>
+        <p class="card-text">Monthly Amount: @Model.MonthlyAmount</p>
+
+        <h4 class="mt-4">Payment Details</h4>
+        @foreach (var payment in Model.Payments)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Payment Term: @payment.Term</h5>
+                    <p class="card-text">Due Date: @payment.DueDate.ToString("yyyy-MM-dd")</p>
+                    <p class="card-text">Balance: @payment.Balance</p>
+
+                    <h6 class="card-subtitle mb-2 text-muted">Payment Info</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Amount: @payment.PaymentInfo.Amount</li>
+                        <li class="list-group-item">Interest: @payment.PaymentInfo.Interest</li>
+                        <li class="list-group-item">Insurance: @payment.PaymentInfo.Insurance</li>
+                        <li class="list-group-item">Total: @payment.PaymentInfo.Total</li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>

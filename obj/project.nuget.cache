@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "go5tClkBoZk=",
+  "dgSpecHash": "1Dgx9RE5ZXw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mAnoL\\Documents\\dev\\JOBS\\Profriends\\repo\\EquityCalculatorWeb\\EquityCalculatorWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mAnoL\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,25 +1,30 @@
-﻿@{
+﻿@model EquityCalculatorWeb.Models.EquityCalculation
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<h2>Equity Calculation Form</h2>
+
 <form id="reservationForm">
     <div class="mb-3">
         <label>Selling Price :</label>
-        <input type="text" id="SellingPrice" class="form-control" />
+        <input id="SellingPrice" name="SellingPrice" asp-for="SellingPrice" class="form-control" />
     </div>
     <div class="mb-3">
         <label>Reservation Date :</label>
-        <input id="ReservationDate" class="form-control" type="date" />
+        <input id="ReservationDate" name="ReservationDate" asp-for="ReservationDate" class="form-control" type="date" />
     </div>
     <div class="mb-3">
         <label>Term :</label>
-        <input id="Term" class="form-control" />
+        <input id="EquityTerm" name="EquityTerm" asp-for="EquityTerm" class="form-control" />
     </div>
     <button type="button" class="btn btn-primary" id="submitBtn">GO</button>
-
     <hr />
     <h3 class="mt-5">Equity Details</h3>
-    <div id="resultContainer"></div>
 </form>
+
+<div id="reservationResult" class="container mt-5"></div>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -29,50 +34,17 @@
                 var formData = {
                     sellingPrice: parseFloat($('#SellingPrice').val()),
                     reservationDate: $('#ReservationDate').val(),
-                    equityTerm: parseInt($('#Term').val())
+                    equityTerm: parseInt($('#EquityTerm').val())
                 };
 
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:22712/Equity/calculate",
+                    url: '@Url.Action("Calculate", "Home")',
                     data: JSON.stringify(formData),
                     contentType: "application/json; charset=utf-8",
-                    dataType: "json",
+                    dataType: "html",
                     success: function (response) {
-                        console.log(response);
-                        var htmlContent = `
-                                <div class="container mt-5">
-                                    <h1>Equity Calculation</h1>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Selling Price: ${response.sellingPrice}</h5>
-                                            <p class="card-text">Reservation Date: ${new Date(response.reservationDate).toISOString().split('T')[0]}</p>
-                                            <p class="card-text">Equity Term: ${response.equityTerm} months</p>
-                                            <p class="card-text">Monthly Amount: ${response.monthlyAmount}</p>
-
-                                            <h4 class="mt-4">Payment Details</h4>
-                                            ${response.payments.map(payment => `
-                                                <div class="card mb-3">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Payment Term: ${payment.term}</h5>
-                                                        <p class="card-text">Due Date: ${new Date(payment.dueDate).toISOString().split('T')[0]}</p>
-                                                        <p class="card-text">Balance: ${payment.balance}</p>
-
-                                                        <h6 class="card-subtitle mb-2 text-muted">Payment Info</h6>
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item">Amount: ${payment.paymentInfo.amount}</li>
-                                                            <li class="list-group-item">Interest: ${payment.paymentInfo.interest}</li>
-                                                            <li class="list-group-item">Insurance: ${payment.paymentInfo.insurance}</li>
-                                                            <li class="list-group-item">Total: ${payment.paymentInfo.total}</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            `).join('')}
-                                        </div>
-                                    </div>
-                                </div>
-                            `;
-                        $('#resultContainer').html(htmlContent);
+                        $('#reservationResult').html(response);
                     },
                     error: function (xhr, status, error) {
                         alert('Error: ' + error);
